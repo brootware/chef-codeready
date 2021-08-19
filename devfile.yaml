@@ -22,7 +22,7 @@ components:
     type: chePlugin
   - type: chePlugin
     reference: 'https://raw.githubusercontent.com/brootware/chef-codeready/main/plugin/plugin.yaml'
-    alias: Chef Infra Extension for Visual Studio Code
+    alias: Chef-Infra-VSCode
 commands:
   - name: Chef Version
     actions:
