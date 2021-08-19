@@ -29,4 +29,4 @@ commands:
       - workdir: '${CHE_PROJECTS_ROOT}'
         type: exec
         command: chef -v
-        component: chef
+        component: chef-workstation
