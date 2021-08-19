@@ -18,8 +18,6 @@ components:
     env:
       - value: /projects/
         name: HOME
-  - id: eamodio/vscode-gitlens/latest
-    type: chePlugin
   - type: chePlugin
     reference: 'https://raw.githubusercontent.com/brootware/chef-codeready/main/plugin/plugin.yaml'
     alias: Chef-Infra-VSCode
