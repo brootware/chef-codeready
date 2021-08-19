@@ -1,0 +1,32 @@
+apiVersion: 1.0.0
+metadata:
+  generateName: chef-codeready-
+projects:
+  - name: chef-codeready
+    source:
+      location: 'https://github.com/brootware/chef-codeready'
+      type: git
+components:
+  - mountSources: true
+    memoryLimit: 512M
+    type: dockerimage
+    alias: chef-workstation
+    image: 'docker.io/chef/chefworkstation:current'
+    command:
+      - sleep
+      - infinity
+    env:
+      - value: /projects/
+        name: HOME
+  - id: eamodio/vscode-gitlens/latest
+    type: chePlugin
+  - type: chePlugin
+    reference: 'https://raw.githubusercontent.com/brootware/pcInfraBuild/master/plugin/meta.yaml'
+    alias: vscode-bracketpair-colorizer
+commands:
+  - name: Chef Version
+    actions:
+      - workdir: '${CHE_PROJECTS_ROOT}'
+        type: exec
+        command: chef -v
+        component: chef
