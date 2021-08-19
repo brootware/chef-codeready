@@ -1,0 +1,16 @@
+
+apiVersion: v2
+publisher: Chef
+name: Chef Infra Extension for Visual Studio Code
+version: latest
+type: VS Code extension
+displayName: Chef Infra Extension for Visual Studio Code
+title: Chef Infra Extension for Visual Studio Code
+description: Chef Infra Extension for Visual Studio Code
+icon: https://chef-software.gallerycdn.vsassets.io/extensions/chef-software/chef/2.1.0/1622492633051/Microsoft.VisualStudio.Services.Icons.Default
+repository: https://github.com/chef/vscode-chef
+category: Linter
+firstPublicationDate: "2021-08-19"
+spec:
+  extensions:
+    - placeholder
